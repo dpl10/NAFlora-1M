@@ -125,5 +125,5 @@ The `Id` column corresponds to the test image id. The `predicted` column corresp
 
 ## Pretrained Models
 
-* Pretrained models and sample code will soon be updated.
+* Pretrained models and sample code will soon be released.
 
