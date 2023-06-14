@@ -31,8 +31,7 @@ There are a total of 15,501 vascular species in the dataset, with 800k training 
 8|234|20,104|702|
 9|178|5,966|534|
 10|144|11,156|432|
-
-|||||
+|------|---------------|-------------|---------------|
 Total|15.5k|800k|200k|
 
 * This is a placehoder for species-level distribution 
