@@ -9,31 +9,21 @@ June 14th, 2023:
 NAFlora-1M was benchmarked in the Herbarium 2022: The flora of North America [Kaggle competition](https://www.kaggle.com/competitions/herbarium-2022-fgvc9).
 
 ## Details
-There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 and the bottom-10 families ordered in terms of number of species-level diversity
+There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 families ordered in terms of number of species-level diversity
 
 | Family |	Number of Species	| Train Images |	Test Images |
 |------|---------------|-------------|---------------|
-Asteraceae| |110,007| |
-Fabaceae| |59,152| |
-Poaceae| |53,547| |
-Cyperaceae| |45,447| |
-Boraginaceae| |23,724| |
-Plantaginaceae| |21,054| |
-Rosaceae| |20,628| |
-Brassicaceae| |19,033| |
-Polygonaceae| |18,899| |
-Laminaceae| |16,854| |
+Asteraceae|1,998|110,007| |
+Fabaceae|1,070|59,152| |
+Poaceae|964|53,547| |
+Cyperaceae|780|45,447| |
+Boraginaceae|454|23,724| |
+Brassicaceae|402|19,033| |
+Plantaginaceae|380|21,054| |
+Polygonaceae|359|18,899| |
+Rosaceae|356|20,628| |
+Laminaceae|309|16,854| |
 |------|---------------|-------------|---------------|
-Calceolariaceae| |30| |
-Apodanthaceae| | 30| |
-Stemonaceae| |27| |
-Metteniusaceae| | 25| |
-Tecophilaeaceae| | 21| |
-Philesiaceae| | 17| |
-Alstroemeriaceae| | 17| |
-Velloziaceae| | 16| |
-Anacempserotaceae| | 13| |
-Cardiopteridaceae| | 9| |
 Total|15.5k|800k|200k|
 
 * This is a placeholder for species-level distribution 
