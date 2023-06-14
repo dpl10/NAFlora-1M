@@ -1,8 +1,6 @@
 # NAFlora-1M
 NAFlora-1M: continental-scale high-resolution fine-grained plant classification dataset
 
-![Banner](assets/inat_2018_banner.jpg)
-
 ## Updates
 June 14th, 2023: 
   * Initialized repository
