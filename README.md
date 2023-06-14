@@ -25,8 +25,7 @@ Rosaceae|356|20,628| |
 Laminaceae|309|16,854| |
 |------|---------------|-------------|---------------|
 Total|7,072|388,345|200k|
-
-* This is a placeholder for species-level distribution 
+ 
 
 ## How to access the data 
 
