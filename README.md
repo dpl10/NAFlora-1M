@@ -34,7 +34,11 @@ Total|15.5k|800k|200k|
 
 ### Links
 
-*placeholder for data links
+* Trainig images [link](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=train_images)
+* Test images [link](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=test_images)
+* Train metadata [link](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=train_metadata.json)
+* Test metadata [link](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=test_metadata.json)
+  
 
 ### Annotation Format
 We follow the annotation format of the [COCO dataset](http://mscoco.org/dataset/#download) and add additional fields. The annotations are stored in the [JSON format](http://www.json.org/) and are organized as follows:
