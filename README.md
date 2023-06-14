@@ -9,7 +9,7 @@ June 14th, 2023:
 NAFlora-1M was benchmarked in the Herbarium 2022: _The flora of North America_ [Kaggle competition](https://www.kaggle.com/competitions/herbarium-2022-fgvc9).
 
 ## Details
-There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 families ordered in terms of number of species-level diversity
+There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 families ordered in terms of species-level diversity.
 
 | Family |	Number of Species	| Train Images |	Test Images |
 |------|---------------|-------------|---------------|
