@@ -24,7 +24,7 @@ Polygonaceae|359|18,899| |
 Rosaceae|356|20,628| |
 Laminaceae|309|16,854| |
 |------|---------------|-------------|---------------|
-Total|15.5k|800k|200k|
+Total|7,072|388,345|200k|
 
 * This is a placeholder for species-level distribution 
 
