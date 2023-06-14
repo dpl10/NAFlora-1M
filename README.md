@@ -13,16 +13,16 @@ There are a total of 15,501 vascular species in the dataset, with 800k training 
 
 | Family |	Number of Species	| Train Images |	Test Images |
 |------|---------------|-------------|---------------|
-1|2,917|118,800|8,751|
-2|2,031|87,192|6,093|
-3|1,258|143,950|3,774|
-4|369|7,835|1,107|
-5|321|6,864|963|
-6|284|22,754|852|
-7|262|8,007|786|
-8|234|20,104|702|
-9|178|5,966|534|
-10|144|11,156|432|
+Asteraceae| |110,007| |
+Fabaceae| |59,152| |
+Poaceae| |53,547| |
+Cyperaceae| |45,447| |
+Boraginaceae| |23,724| |
+Plantaginaceae| |21,054| |
+Rosaceae| |20,628| |
+Brassicaceae| |19,033| |
+Polygonaceae| |18,899| |
+Laminaceae| |16,854| |
 |------|---------------|-------------|---------------|
 Total|15.5k|800k|200k|
 
