@@ -119,11 +119,7 @@ Id,predicted
 ```
 The `Id` column corresponds to the test image id. The `predicted` column corresponds to 1 category id, for scientificName (species).
 
-## Terms of Use
-
-*placeholder for terms of usage
-
 ## Pretrained Models
 
-*placeholder for pretrained models
+* Pretrained models and sample code will soon be updated.
 
