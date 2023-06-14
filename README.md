@@ -5,11 +5,11 @@ NAFlora-1M: continental-scale high-resolution fine-grained plant classification 
 June 14th, 2023: 
   * Initialized repository
 
-## Kaggle competition - Herbarium 2022: The flora of North America
-NAFlora-1M was benchmarked in the Herbarium 2022 [Kaggle competition](https://www.kaggle.com/competitions/herbarium-2022-fgvc9).
+## Kaggle competition
+NAFlora-1M was benchmarked in the Herbarium 2022: The flora of North America [Kaggle competition](https://www.kaggle.com/competitions/herbarium-2022-fgvc9).
 
 ## Details
-There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 and the bottom-10 famileis ordered in terms of number of species-level diversity
+There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 and the bottom-10 families ordered in terms of number of species-level diversity
 
 | Family |	Number of Species	| Train Images |	Test Images |
 |------|---------------|-------------|---------------|
@@ -26,15 +26,17 @@ There are a total of 15,501 vascular species in the dataset, with 800k training 
 |------|---------------|-------------|---------------|
 Total|15.5k|800k|200k|
 
-* This is a placehoder for species-level distribution 
+* This is a placeholder for species-level distribution 
 
 ## How to access the data 
 
 * This section specifies details on about how to access the [data](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data).
 
-%## Differences from other herbarium specimen datasets 
+### Links
 
-## Annotation Format
+*placeholder for data links
+
+### Annotation Format
 We follow the annotation format of the [COCO dataset](http://mscoco.org/dataset/#download) and add additional fields. The annotations are stored in the [JSON format](http://www.json.org/) and are organized as follows:
 ```
 { 
@@ -95,7 +97,7 @@ license {
 }
 ```
 
-## Evaluation through late submission
+### Evaluation through late submission
 
 It is possible to get performance metric for our test data through the [submssions page](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/submissions)
 
@@ -110,10 +112,6 @@ The `Id` column corresponds to the test image id. The `predicted` column corresp
 ## Terms of Use
 
 *placeholder for terms of usage
-
-## Data
-
-*placeholder for data links
 
 ## Pretrained Models
 
