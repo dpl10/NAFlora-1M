@@ -24,6 +24,16 @@ Brassicaceae| |19,033| |
 Polygonaceae| |18,899| |
 Laminaceae| |16,854| |
 |------|---------------|-------------|---------------|
+Calceolariaceae| |30| |
+Apodanthaceae| | 30| |
+Stemonaceae| |27| |
+Metteniusaceae| | 25| |
+Tecophilaeaceae| | 21| |
+Philesiaceae| | 17| |
+Alstroemeriaceae| | 17| |
+Velloziaceae| | 16| |
+Anacempserotaceae| | 13| |
+Cardiopteridaceae| | 9| |
 Total|15.5k|800k|200k|
 
 * This is a placeholder for species-level distribution 
