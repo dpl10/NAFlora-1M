@@ -39,7 +39,7 @@ Total|15.5k|800k|200k|
   * [Training images - 1000 px](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=train_images)
   * [Test images - 1000 px](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=test_images)
 * Training and test images - adjusted resolution [88.61GB]
-  * Images are resized to 480x480, prepared in [TFRecords](https://www.tensorflow.org/tutorials/load_data/tfrecord) format.
+  * Images are resized to 480x480, and are prepared in [TFRecords](https://www.tensorflow.org/tutorials/load_data/tfrecord) format.
   * [Training images - 480px [70GB]](https://www.kaggle.com/datasets/parkjohnychae/herbarium-2022-train-tfrec-480)
   * [Test images - 480px [18GB]](https://www.kaggle.com/datasets/parkjohnychae/herbarium-2022-test-tfrec-480)
 * Train metadata [link](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=train_metadata.json)
