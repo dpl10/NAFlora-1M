@@ -37,7 +37,7 @@ Top-10 total|7,072|388,345|97,300|
 * Training and test images - high resolution [163.17GB]
   * All images are resized so that the longest edge is 1000 px  
   * [Training images - 1000 px [119GB]](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=train_images)
-  * [Test images - 1000 px [54GB]](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=test_images)
+  * [Test images - 1000 px [44GB]](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=test_images)
 * Training and test images - adjusted resolution [88.61GB]
   * Images are resized to 480x480, and formated in [TFRecords](https://www.tensorflow.org/tutorials/load_data/tfrecord).
   * [Training images - 480px [70GB]](https://www.kaggle.com/datasets/parkjohnychae/herbarium-2022-train-tfrec-480)
