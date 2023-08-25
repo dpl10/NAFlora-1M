@@ -32,7 +32,7 @@ config_dict["resize_resol"] =[380, 380]
 config_dict["crop_ratio"] = 0.9
 config_dict["n_epochs"] = 30
 config_dict["aug_method"] = "standard"
-config_dict["out_path"] = "/content/drive/MyDrive/naflora1m_results2/"
+config_dict["out_path"] = "./"
 config_dict["max_LR"] = 7e-1
 config_dict["init_LR"] = config_dict["max_LR"]/100
 config_dict["wd"] = 1e-5
@@ -185,8 +185,8 @@ history = model.fit(
                                config_dict["out_path"]),
                                save_weights_freq,
               tf.keras.callbacks.TerminateOnNaN()])
-config_dict["out_path"] = os.path.join(config_dict["out_path"], OutFileName+"_weights.h5")
-model.save_weights(config_dict["out_path"]) 
+oPATHw = os.path.join(config_dict["out_path"], OutFileName+"_weights.h5")
+model.save_weights(oPATHw) 
 
 ### INFERENCE ###
 
