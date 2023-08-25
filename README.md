@@ -7,7 +7,7 @@ August 25th, 2023:
 June 14th, 2023: 
   * Initialized repository
 
-## Overviewq
+## Overview
 In botany, a ‘flora’ is a complete account of the plants found in a geographic region. The dichotomous keys and detailed descriptions of diagnostic morphological features contained within a flora are used by botanists to determine which names to apply to plant specimens. This year's competition dataset aims to encapsulate the flora of North America so that we can test the capability of artificial intelligence to replicate this traditional tool —a crucial first step to harnessing AI’s potential botanical applications.
 
 **NAFlora-1M** dataset comprises 1.05 M images of 15,501 vascular plants, which constitute more than 90% of the taxa documented in North America. Our dataset is constrained to include only vascular land plants (lycophytes, ferns, gymnosperms, and flowering plants).
