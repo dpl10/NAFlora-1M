@@ -3,7 +3,8 @@ NAFlora-1M: continental-scale high-resolution fine-grained plant classification 
 
 ## Updates
 August 25th, 2023:
-  * Dataset Construction
+  * Overview
+ 
 June 14th, 2023: 
   * Initialized repository
 
