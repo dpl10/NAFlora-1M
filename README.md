@@ -4,6 +4,7 @@ NAFlora-1M: continental-scale high-resolution fine-grained plant classification 
 ## Updates
 August 25th, 2023:
   * Overview
+  * Training script
  
 June 14th, 2023: 
   * Initialized repository
@@ -14,6 +15,60 @@ In botany, a ‘flora’ is a complete account of the plants found in a geograph
 **NAFlora-1M** dataset comprises 1.05 M images of 15,501 vascular plants, which constitute more than 90% of the taxa documented in North America. Our dataset is constrained to include only vascular land plants (lycophytes, ferns, gymnosperms, and flowering plants).
 
 Our dataset has a long-tail distribution. The number of images per taxon is as few as seven and as many as 100 images. Although more images are available, we capped the maximum number in an attempt to ensure sufficient but manageable training data size.
+
+## Training 
+
+```bash 
+python3 src/naflora1m_train_and_infer.py
+
+-------------------------------------------------------------------
+
+/usr/local/lib/python3.10/dist-packages/keras/initializers/initializers.py:120: UserWarning: The initializer VarianceScaling is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initalizer instance more than once.
+  warnings.warn(
+Downloading data from https://github.com/leondgarse/keras_efficientnet_v2/releases/download/effnetv2_pretrained/efficientnetv2-s-21k.h5
+194646348/194646348 [==============================] - 1s 0us/step
+>>>> Load pretrained from: /root/.keras/models/efficientnetv2/efficientnetv2-s-21k.h5
+EfficientNetV2S
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ EfficientNetV2S (Functional  (None, 12, 12, 1280)     20331360  
+ )                                                               
+                                                                 
+ global_average_pooling2d (G  (None, 1280)             0         
+ lobalAveragePooling2D)                                          
+                                                                 
+ dropout (Dropout)           (None, 1280)              0         
+                                                                 
+ dense (Dense)               (None, 1024)              1311744   
+                                                                 
+ dropout_1 (Dropout)         (None, 1024)              0         
+                                                                 
+ dense_1 (Dense)             (None, 15501)             15888525  
+                                                                 
+=================================================================
+Total params: 37,531,629
+Trainable params: 37,377,757
+Non-trainable params: 153,872
+_________________________________________________________________
+
+grab config info
+done - saving config info to ./EfficientNetV2S_380_OCEP30_FC_CLSBW10_None_configs.json
+model summary saved to EfficientNetV2S_380_OCEP30_FC_CLSBW10_None_model_summary.txt. initialization is done
+{'name': 'SGDW', 'learning_rate': {'class_name': 'OneCycle', 'config': {'initial_learning_rate': 0.006999999999999999, 'maximal_learning_rate': 0.7, 'cycle_size': 49230, 'scale_mode': 'cycle', 'shift_peak': 0.2}}, 'decay': 0.0, 'momentum': 0.9, 'nesterov': True, 'weight_decay': 1e-05, 'exclude_from_weight_decay': None}
+Epoch 1/30
+   6/1641 [..............................] - ETA: 20:16 - loss: 84.9471 - f1_score: 0.0000e+00WARNING:tensorflow:Callback method `on_train_batch_end` is slow compared to the batch time (batch time: 0.0074s vs `on_train_batch_end` time: 28.2103s). Check your callbacks.
+WARNING:tensorflow:Callback method `on_train_batch_end` is slow compared to the batch time (batch time: 0.0074s vs `on_train_batch_end` time: 28.2103s). Check your callbacks.
+1641/1641 [==============================] - 1491s 743ms/step - loss: 6.2415 - f1_score: 0.0019 - time: 1490.8735
+Epoch 2/30
+1641/1641 [==============================] - 1222s 745ms/step - loss: 3.1388 - f1_score: 0.1323 - time: 1221.8033
+Epoch 3/30
+1641/1641 [==============================] - 1224s 746ms/step - loss: 2.2029 - f1_score: 0.3254 - time: 1223.6055
+Epoch 4/30
+1641/1641 [==============================] - 1225s 746ms/step - loss: 1.8870 - f1_score: 0.4320 - time: 1224.5351
+Epoch 5/30
+```
 
 ## Details
 There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 families ordered in terms of species-level diversity.
