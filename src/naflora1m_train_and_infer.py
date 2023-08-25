@@ -207,13 +207,17 @@ tt_ds = get_test_ds_tfrec( LS_FILENAMES = tt_fns,
 
 test_images_ds = tt_ds.map(lambda image, idnum: image)
 test_Ids_ds = tt_ds.map(lambda image, idnum: idnum)
+predictions = np.zeros(config_dict["N_tt_imgs"], dtype=np.int32)
 
-predictions = model.predict(test_images_ds, verbose = 1)
-np.save(OutFileName+"raw_predict.npy", predictions)
+for i, image in tqdm(enumerate(test_images_ds), total= (config_dict["N_tt_imgs"]//config_dict["batch_size"] + 1)):
+    idx1 = i*config_dict["batch_size"]
+    if (idx1 + config_dict["batch_size"]) > config_dict["N_tt_imgs"]:
+        idx2 = config_dict["N_tt_imgs"]
+    else:
+        idx2 = idx1 + config_dict["batch_size"]
+    predictions[idx1:idx2] = np.argmax(model.predict_on_batch(image), axis=-1)
 
-predictions = np.argmax(predictions, axis = -1)
-predict_image_nums = np.zeros(config_dict["N_tt_imgs"], dtype=np.int32)
-
+predict_image_nums = np.zeros(N_tt_imgs, dtype=np.int32)
 
 for i, image_nums in tqdm(enumerate(test_Ids_ds), total= (config_dict["N_tt_imgs"]//config_dict["batch_size"] + 1)):
     idx1 = i*config_dict["batch_size"]
@@ -226,4 +230,3 @@ for i, image_nums in tqdm(enumerate(test_Ids_ds), total= (config_dict["N_tt_imgs
 prediction_cat_id = [map_name_to_cat_id[map_label_to_name[ele]] for ele in predictions]
 
 pd.DataFrame({"Id":predict_image_nums,"Predicted":prediction_cat_id}).to_csv(os.path.join(config_dict["out_path"],OutFileName+"_submissions.csv"),index=False)
-
