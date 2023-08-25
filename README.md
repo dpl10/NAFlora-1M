@@ -8,6 +8,8 @@ August 25th, 2023:
  
 June 14th, 2023: 
   * Initialized repository
+  * 
+[![My-Post.jpg](https://i.postimg.cc/15qZZfvt/My-Post.jpg)](https://postimg.cc/Xp4Pf7SS)
 
 ## Overview
 In botany, a ‘flora’ is a complete account of the plants found in a geographic region. The dichotomous keys and detailed descriptions of diagnostic morphological features contained within a flora are used by botanists to determine which names to apply to plant specimens. This year's competition dataset aims to encapsulate the flora of North America so that we can test the capability of artificial intelligence to replicate this traditional tool —a crucial first step to harnessing AI’s potential botanical applications.
