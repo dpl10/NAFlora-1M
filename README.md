@@ -18,7 +18,7 @@ Our dataset has a long-tail distribution. The number of images per taxon is as f
 
 ## Training 
 
-```bash 
+``` 
 python3 src/naflora1m_train_and_infer.py
 
 -------------------------------------------------------------------
