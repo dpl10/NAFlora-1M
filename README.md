@@ -14,9 +14,6 @@ In botany, a ‘flora’ is a complete account of the plants found in a geograph
 
 Our dataset has a long-tail distribution. The number of images per taxon is as few as seven and as many as 100 images. Although more images are available, we capped the maximum number in an attempt to ensure sufficient but manageable training data size.
 
-## Kaggle competition
-NAFlora-1M was benchmarked in the Herbarium 2022: _The flora of North America_ [Kaggle competition](https://www.kaggle.com/competitions/herbarium-2022-fgvc9).
-
 ## Details
 There are a total of 15,501 vascular species in the dataset, with 800k training images, 200k test images. We show the top-10 families ordered in terms of species-level diversity.
 
@@ -36,7 +33,6 @@ Laminaceae|309|16,854| 4,239|
 Top-10 total|7,072|388,345|97,300|
 
  
-
 ## How to access the data 
 
 * This section specifies details on about how to access the [data](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data).
@@ -54,6 +50,9 @@ Top-10 total|7,072|388,345|97,300|
 * [Train metadata [667MB]](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=train_metadata.json)
 * [Test metadata [23MB]](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=test_metadata.json)
   
+
+## Kaggle competition
+NAFlora-1M was benchmarked in the Herbarium 2022: _The flora of North America_ [Kaggle competition](https://www.kaggle.com/competitions/herbarium-2022-fgvc9).
 
 ### Annotation Format
 We follow the annotation format of the [COCO dataset](http://mscoco.org/dataset/#download) and add additional fields. The annotations are stored in the [JSON format](http://www.json.org/) and are organized as follows:
