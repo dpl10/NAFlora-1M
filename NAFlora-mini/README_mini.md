@@ -4,5 +4,6 @@ This folder provides information on of how NAFlora-1M mini dataset was created. 
 
 # Public TFREC links
 
-[NAFlora-mini 512x512 Training & Validation Set](https://www.kaggle.com/datasets/parkjohnychae/herbarium-2022-miniv1-512-tfrec)
-[NAFlora-mini 1024x768 Training Set](https://www.kaggle.com/datasets/parkjohnychae/arbitrary512)
+- [NAFlora-mini 512x512 Training & Validation Set](https://www.kaggle.com/datasets/parkjohnychae/herbarium-2022-miniv1-512-tfrec)
+
+- [NAFlora-mini 1024x768 Training Set](https://www.kaggle.com/datasets/parkjohnychae/arbitrary512)
