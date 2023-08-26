@@ -1,8 +1,6 @@
-
-#Updated 8/24/2023
-#Originally wrote to run in cloud TPU in 2022.
-#Updated 8/11/2022
-# author: John Park
+# Updated 8/24/2023
+# Originally wrote to run in cloud TPU in 2022.
+# Author: John Park
 
 ##
 ##      import libraries    ##
@@ -28,9 +26,9 @@ config_dict["tfrec_structure"] = {"image":"str",
                                   "genus":"int"
                                   }
 config_dict["tfrec_shape"] =[480, 480]
-config_dict["resize_resol"] =[380, 380]
+config_dict["resize_resol"] =[400, 400]
 config_dict["crop_ratio"] = 0.9
-config_dict["n_epochs"] = 30
+config_dict["n_epochs"] = 60
 config_dict["aug_method"] = "standard"
 config_dict["out_path"] = "./"
 config_dict["max_LR"] = 7e-1
@@ -150,11 +148,11 @@ with strategy.scope():
                                        weight_decay = config_dict["wd"],
                                        momentum = 0.9,
                                        nesterov = True),
-        loss = tfl.SigmoidFocalCrossEntropy2(alpha = None,
-                                             gamma = 0.5,
-                                             reduction = tf.keras.losses.Reduction.AUTO),
-         #tf.keras.losses.CategoricalCrossentropy(label_smoothing = 0.1),
-        metrics = tfa.metrics.F1Score(num_classes =config_dict['N_cls'])
+        loss = tf.keras.losses.CategoricalCrossentropy(label_smoothing = 0.1),
+        #tfl.SigmoidFocalCrossEntropy2(alpha = None,
+                #                             gamma = 0.5,
+                #                             reduction = tf.keras.losses.Reduction.AUTO),
+         metrics = tfa.metrics.F1Score(num_classes =config_dict['N_cls'])
     )
 
 model_name = model.layers[0].get_config()['name']
