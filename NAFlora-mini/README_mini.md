@@ -4,19 +4,21 @@ This folder provides information on of how NAFlora-1M mini dataset was created. 
 
 # NAFlora-mini data description
 
-- Number of images
-Training images: 46,782
+### Number of images
+
+- Training images: 46,782
  
-Validation images: 9,315 
+- Validation images: 9,315 
 
-Test images: 13,231
+- Test images: 13,231
 
-- Number of classes
-N Species = 1863 
-N Genera = 829 
-N family = 162
+### Number of classes
 
-- Class distribution
+- N Species : 1863 
+- N Genera : 829 
+- N family : 162
+
+### Class distribution
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1scxUcxVY0nVtm3ZqAo6eZOsgui0p11b5?usp=sharing)
 
