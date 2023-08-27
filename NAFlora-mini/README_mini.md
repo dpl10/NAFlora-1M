@@ -7,9 +7,7 @@ This folder provides information on of how NAFlora-1M mini dataset was created. 
 ### Number of images
 
 - Training images: 46,782
- 
 - Validation images: 9,315 
-
 - Test images: 13,231
 
 ### Number of classes
@@ -18,7 +16,7 @@ This folder provides information on of how NAFlora-1M mini dataset was created. 
 - N Genera : 829 
 - N family : 162
 
-### Class distribution
+### Plot class distribution
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1scxUcxVY0nVtm3ZqAo6eZOsgui0p11b5?usp=sharing)
 
