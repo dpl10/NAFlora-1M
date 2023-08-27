@@ -16,7 +16,7 @@ N family = 162
 
 - Class distribution
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1scxUcxVY0nVtm3ZqAo6eZOsgui0p11b5?usp=sharing]
+[[Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1scxUcxVY0nVtm3ZqAo6eZOsgui0p11b5?usp=sharing]
 
 # Public TFREC links
 
