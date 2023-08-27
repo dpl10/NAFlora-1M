@@ -5,8 +5,10 @@ This folder provides information on of how NAFlora-1M mini dataset was created. 
 # NAFlora-mini data description
 
 - Number of images
-Training images: 4,6782 
+Training images: 46,782
+ 
 Validation images: 9,315 
+
 Test images: 13,231
 
 - Number of classes
