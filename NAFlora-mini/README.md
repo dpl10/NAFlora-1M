@@ -1,6 +1,6 @@
 # NAFlora-1M mini
 
-This folder provides information on of how NAFlora-1M mini dataset was created. We provide full anatomy of the training and validation set, sampling from the training data. Since the testing data was sampled from a hold-out set, it is kept seperate for future validation purposes. Validation set would work sufficiently to benchmark the data. 
+This folder provides information on of how NAFlora-1M mini dataset was created. We provide full anatomy of the training and validation set, sampling from the training data. Code sample for loading and viewing the metadata can be found in this Colab notebook: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1scxUcxVY0nVtm3ZqAo6eZOsgui0p11b5?usp=sharing) Since the testing data was sampled from a hold-out set, it is kept seperate for future validation purposes. Validation set would work sufficiently to benchmark the data. 
 
 # NAFlora-mini data description
 
