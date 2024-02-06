@@ -8,18 +8,17 @@ August 25th, 2023:
  
 June 14th, 2023: 
   * Initialized repository
-  * 
+
 [![My-Post.jpg](https://i.postimg.cc/15qZZfvt/My-Post.jpg)](https://postimg.cc/Xp4Pf7SS)
 
 ## Overview
-In botany, a ‘flora’ is a complete account of the plants found in a geographic region. The dichotomous keys and detailed descriptions of diagnostic morphological features contained within a flora are used by botanists to determine which names to apply to plant specimens. This year's competition dataset aims to encapsulate the flora of North America so that we can test the capability of artificial intelligence to replicate this traditional tool —a crucial first step to harnessing AI’s potential botanical applications.
+In botany, a ‘flora’ is a complete account of the plants found in a geographic region. The dichotomous keys and detailed descriptions of diagnostic morphological features contained within a flora are used by botanists to determine which names to apply to plant specimens. This competition dataset aims to encapsulate the flora of North America so that we can test the capability of artificial intelligence to replicate this traditional tool —a crucial first step to harnessing AI’s potential botanical applications.
 
 **NAFlora-1M** dataset comprises 1.05 M images of 15,501 vascular plants, which constitute more than 90% of the taxa documented in North America. Our dataset is constrained to include only vascular land plants (lycophytes, ferns, gymnosperms, and flowering plants).
 
 Our dataset has a long-tail distribution. The number of images per taxon is as few as seven and as many as 100 images. Although more images are available, we capped the maximum number in an attempt to ensure sufficient but manageable training data size.
 
 ## Training 
-
 ``` 
 python3 src/naflora1m_train_and_infer.py
 
@@ -92,11 +91,9 @@ Top-10 total|7,072|388,345|97,300|
 
  
 ## How to access the data 
-
 * This section specifies details on about how to access the [data](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data).
 
 ### Links
-
 * Training and test images - high resolution [163.17GB]
   * All images are resized so that the longest edge is 1000 px  
   * [Training images - 1000 px [119GB]](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/data?select=train_images)
@@ -174,7 +171,6 @@ license {
 ```
 
 ### Evaluation through late submission
-
 It is possible to get performance metric for our test data through the [submssions page](https://www.kaggle.com/competitions/herbarium-2022-fgvc9/submissions)
 
 The submission format for the Kaggle competition is a csv file with the following format:
@@ -186,10 +182,7 @@ Id,predicted
 The `Id` column corresponds to the test image id. The `predicted` column corresponds to 1 category id, for scientificName (species).
 
 ## Terms of Use
-
 * CC BY-NC-ND-4.0: Commerical use of the data and pre-trained model is restricted.
 
 ## Pretrained Models
-
 * Pretrained models and sample code will soon be released.
-
